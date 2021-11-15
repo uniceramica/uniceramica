@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_product_template_uniceramica_volume" model="ir.ui.view">
+            <field name="name">product.template.uniceramica.volume</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="stock.view_template_property_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='group_lots_and_weight']" position="replace">
+                    <group string="Logistics" name="group_lots_and_weight"
+                           attrs="{'invisible':[('type', 'not in', ['product', 'consu'])]}">
+                        <label for="weight"/>
+                        <div class="o_row" name="weight">
+                            <field name="weight"/>
+                            <span>kg</span>
+                        </div>
+                        <label for="package_volume"/>
+                        <div name="package_volume">
+			                <span>L</span>
+                            <field name="package_length" style="margin-left: 10px; width:80px;" placeholder="Package Length"/>
+                            <span>P</span>
+			                <field name="package_breadth" style="margin-left: 10px; width:80px;" placeholder="Package Breadth"/>
+                            <span>H</span>
+			                <field name="package_height" style="margin-left: 10px; width:80px;" placeholder="Package Height"/>
+                            <field name="package_volume" style="width:240px;" string="Package Volume"/>
+                            <span>m³</span>
+                        </div>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

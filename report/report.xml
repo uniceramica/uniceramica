@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <template id="report_assets_common_uniceramica" inherit_id="web.report_assets_common">
+            <xpath expr="/t/link[@href='/web/static/src/scss/report.scss']" position="attributes">
+                <attribute name="href">/uniceramica/static/src/scss/report.scss</attribute>
+            </xpath>
+            <xpath expr="/t/link[@href='/web/static/src/scss/layout_boxed.scss']" position="attributes">
+                <attribute name="href">/uniceramica/static/src/scss/layout_boxed.scss</attribute>
+            </xpath>
+        </template>
+        <template id="address_layout_uniceramica" inherit_id="web.address_layout">
+            <xpath expr="/t/t[2]/div[1]/t[1]/div[1]" position="attributes">
+                <attribute name="class">col-6 mb-4</attribute>
+            </xpath>
+        </template>
+        <template id="external_layout_boxed_uniceramica" inherit_id="web.external_layout_boxed">
+            <xpath expr="//div[@class='o_boxed_header']" position="replace">
+                <div class="o_boxed_header">
+                    <div class="row mb8">
+                        <div class="col-3">
+                            <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" alt="Logo" style="margin-top: 12px;" />
+                        </div>
+                        <div class="col-9 text-left">
+                            <div class="text-right mb4 float-right" style="width: 310px;">
+                                <h5 class="mt0" t-field="company.report_header"/>
+                            </div>
+                            <div name="company_address" class="mb4">
+                                <b style="font-size: 22px; line-height: 30px;">Uniceramica S.r.l.</b>
+                                <div>Via Cavallera, 17 - Andalo Valtellino (SO)</div>
+                                <div>Via G. di Vittorio, 14 - Bovisio Masciago (MB)</div>
+                                <div>info@uniceramica.it</div>
+                                <div>VAT: IT00974680142</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+            <xpath expr="/t/div[2]/div[1]" position="attributes">
+                <attribute name="class">pt-2</attribute>
+            </xpath>            
+            <xpath expr="//div/div[hasclass('text-center')]" position="replace">
+                <div class="text-center">
+                    <ul class="list-inline">
+                        <li t-if="company.phone" class="list-inline-item"><span class="o_force_ltr" t-field="company.phone"/></li>
+                        <li t-if="company.email" class="list-inline-item"><span t-field="company.email"/></li>
+                        <li t-if="company.website" class="list-inline-item"><span t-field="company.website"/></li>
+                        <li t-if="company.vat" class="list-inline-item"><t t-esc="company.country_id.vat_label or 'P. IVA'"/>: <span t-field="company.vat"/></li>
+                    </ul>
+                    <div t-field="company.report_footer"/>
+                    <div t-if="report_type == 'pdf'">
+                        Page: <span class="page"/> / <span class="topage"/>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>
