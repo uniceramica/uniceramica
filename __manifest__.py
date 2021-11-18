@@ -14,12 +14,12 @@
     'author': 'Uniceramica',
     'company': 'Uniceramica',
     'website': "https://uniceramica.it",
-    'depends': ['base', 'stock', 'l10n_it_stock_ddt','web','sale','sale_management'],
+    'depends': ['base', 'stock', 'l10n_it_stock_ddt','web','website_sale','sale','sale_management'],
     'data': [
-        'views/volume_view.xml',
-        'report/ddt.xml',
-        'report/report.xml',
-        'report/preventivo_ordine.xml'
+        'templates/ddt.xml',
+        'templates/report.xml',
+        'templates/preventivo_ordine.xml',
+        'views/volume_view.xml'
     ],
     'demo': [],
     'images': ['static/description/banner.png'],
