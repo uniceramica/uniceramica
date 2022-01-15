@@ -51,7 +51,21 @@
                     // remove border-top from standard layout
                     //border-top: none; //2021-11-07 rimosso Andrea
                     border-right: 1px solid gray('700');
-                }
+                    .is_on_offer {
+                        border-radius: 25px;
+                        padding: 1px 15px;
+                        text-align: center;
+                        background-color: #dc3545;
+                        color: white;
+                    }
+                    table.table_is_on_offer {
+                        border: 0px;
+                        td {
+                            border: 0px;
+                            padding: 0px 0px 0px 4px;
+                        }
+                    }
+                }                
                 &.o_line_section td,
                 &.o_line_note td,
                 &.is-subtotal td {
@@ -59,13 +73,12 @@
                     border-bottom: 1px solid gray('700');
                 }
                 &.o_line_section td {
-                    background: rgb(253,253,253);
+                    background-color: #F5F5F5 !important;
                     background: linear-gradient(0deg, rgba(253,253,253,0.85) 0%, rgba(255,255,255,1) 100%);
                     //background-color: rgba($o-default-report-primary-color, 0.1);
                     color: rgb(36, 36, 36);
                     padding-top: 10px;
                     padding-bottom: 6px;
-                    
                 }
                 &.is-subtotal td {
                     padding-bottom: 10px;

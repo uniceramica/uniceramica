@@ -5,5 +5,6 @@
 #
 ##################
 
+from . import brand
 from . import sale
 from . import volume

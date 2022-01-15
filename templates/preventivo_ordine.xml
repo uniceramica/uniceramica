@@ -1,34 +1,77 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-    <data>
-        <template id="report_saleorder_document_uniceramica" inherit_id="sale.report_saleorder_document">
-            <xpath expr="/t/t[1]/t[2]/div[1]" position="attributes">
-                 <attribute name="style">border-left: solid 3px #9b1830; font-size: 16px; padding-left: 10px</attribute>
-            </xpath>
-            <xpath expr="/t/t[1]/div[1]/table[1]/thead[1]/tr[1]/th[5]" position="replace"><!--tolto th_taxes, messo prezzo scontato-->
-               <th name="th_disc_price" class="text-right" t-if="display_discount">Unit Price After Discount</th>
-            </xpath>
-            <xpath expr="/t/t[1]/div[1]/table[1]/tbody[1]/t[2]/tr[1]/t[1]/td[5]" position="replace"><!--tolto td_taxes, messo prezzo scontato-->
-               <td name="td_disc_price" class="text-right" t-if="display_discount">
-                    <t t-if="line.disc_price">
-                         <span t-esc="'%.2f'%(line.disc_price)"/>
+     <data>
+          <template id="report_saleorder_document_uniceramica" inherit_id="sale.report_saleorder_document">
+               <xpath expr="/t/t[1]/t[2]/div[1]" position="attributes">
+                    <attribute name="style">border-left: solid 3px #9b1830; font-size: 16px; padding-left: 10px</attribute>
+               </xpath>
+               <xpath expr="/t/t[1]/div[1]/table[1]/thead[1]/tr[1]/th[5]" position="replace"><!--tolto th_taxes, messo prezzo scontato-->
+                    <th name="th_disc_price" class="text-right" t-if="display_discount">Unit Price After Discount</th>
+               </xpath>
+               <xpath expr="/t/t[1]/div[1]/table[1]/tbody[1]/t[2]/tr[1]/t[1]/td[5]" position="replace"><!--tolto td_taxes, messo prezzo scontato-->
+                    <td name="td_disc_price" class="text-right" t-if="display_discount">
+                         <t t-if="line.is_on_offer">
+                              <table class="table_is_on_offer float-right">
+                                   <tr>
+                                        <td>
+                                             <span class="is_on_offer float-right">OFFER</span>
+                                        </td>
+                                        <td>
+                                             <span t-esc="'%.2f'%(line.disc_price)"/>
+                                        </td>
+                                   </tr>
+                              </table>
+                         </t>
+                         <t t-if="line.is_on_offer == False">
+                              <span t-esc="'%.2f'%(line.disc_price)"/>
+                         </t>
+                    </td>
+               </xpath>
+               <xpath expr="/t/t[1]/div[1]/table[1]/tbody[1]/t[2]/tr[1]/t[1]/td[@name='td_priceunit']" position="replace">
+                    <t t-if="display_discount">
+                         <td name="td_priceunit" class="text-right">
+                              <span t-field="line.price_unit"/>
+                         </td>
                     </t>
-               </td>
-            </xpath>
-            <xpath expr="//div[hasclass('page')]/h2" position="attributes">
-                 <attribute name="style">font-weight: bold; font-size: 1.5rem;</attribute>
-            </xpath>
-            <xpath expr="//th[@name='th_discount']" position="attributes">
-                 <attribute name="style">white-space: nowrap;</attribute>
-            </xpath>
-        </template>
-        <template id="report_saleorder_document_inherit_sale_management_uniceramica" inherit_id="sale_management.report_saleorder_document_inherit_sale_management">
-            <xpath expr="//th[@name='th_option_discount']" position="attributes">
-                 <attribute name="style">white-space: nowrap;</attribute>
-            </xpath>
-            <xpath expr="//th[@name='th_option_price_unit']" position="attributes">
-                 <attribute name="style">white-space: nowrap;</attribute>
-            </xpath>
-        </template>
-    </data>
+                    <t t-if="display_discount == False">
+                         <t t-if="line.is_on_offer">
+                              <td name="td_priceunit" class="text-right">
+                                   <table class="table_is_on_offer float-right">
+                                        <tr>
+                                             <td>
+                                                  <span class="is_on_offer float-right">OFFER</span>
+                                             </td>
+                                             <td>
+                                                  <span t-field="line.price_unit"/>
+                                             </td>
+                                        </tr>
+                                   </table>
+                              </td>
+                         </t>
+                         <t t-if="line.is_on_offer == False">
+                              <td name="td_priceunit" class="text-right">
+                                    <span t-field="line.price_unit"/>
+                              </td>
+                         </t>
+                    </t>
+               </xpath>
+               <xpath expr="//div[hasclass('page')]/h2" position="attributes">
+                    <attribute name="style">font-weight: bold; font-size: 1.5rem;</attribute>
+               </xpath>
+               <xpath expr="//th[@name='th_discount']" position="attributes">
+                    <attribute name="style">white-space: nowrap;</attribute>
+               </xpath>
+               <!--<xpath expr="//th[@name='th_priceunit']" position="attributes">
+                    <attribute name="style">white-space: nowrap;</attribute>
+               </xpath>-->
+          </template>
+          <template id="report_saleorder_document_inherit_sale_management_uniceramica" inherit_id="sale_management.report_saleorder_document_inherit_sale_management">
+               <xpath expr="//th[@name='th_option_discount']" position="attributes">
+                    <attribute name="style">white-space: nowrap;</attribute>
+               </xpath>
+               <xpath expr="//th[@name='th_option_price_unit']" position="attributes">
+                    <attribute name="style">white-space: nowrap;</attribute>
+               </xpath>
+          </template>
+     </data>
 </odoo>

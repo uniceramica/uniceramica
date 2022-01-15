@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <template id="website_sale_product_uniceramica" inherit_id="website_sale.product">
+            <xpath expr="//div[@id='product_details']/h1" position="after">
+                <h2 itemprop="brand">
+                    <t t-if="product.brand_id.sudo().image_128">
+                        <t t-set="logourl" t-value="'https://uniceramica.it/web/image?model=res.partner&amp;id='+str(product.brand_id.sudo().id)+'&amp;field=image_256'"/>
+                        <meta itemprop="logo" t-attf-content="{{logourl}}" />
+                        <t t-if="product.brand_id.sudo().is_published">
+                            <t t-if="product.brand_id.sudo().website_url">
+                                <a t-attf-href="{{product.brand_id.sudo().website_url}}" t-attf-alt="{{product.brand_id.sudo().name}}" t-attf-title="{{product.brand_id.sudo().name}}">
+                                    <img t-attf-src="{{logourl}}" />
+                                </a>
+                            </t>
+                            <t t-else="">
+                                <img t-attf-src="{{logourl}}" />
+                            </t>
+                        </t>
+                        <t t-else="">
+                            <span itemprop="name" t-field="product.brand_id.sudo().name" />
+                        </t>
+                        <meta itemprop="name" t-attf-content="{{product.brand_id.sudo().name}}" />
+                    </t>
+                    <t t-else="">
+                        <t t-if="product.brand_id.sudo().is_published">
+                            <t t-if="product.brand_id.sudo().website_url">
+                                <a t-attf-href="{{product.brand_id.sudo().website_url}}" class="btn btn-lg btn-primary">
+                                    <span itemprop="name" t-field="product.brand_id.sudo().name" />
+                                </a>
+                            </t>
+                            <t t-else="">
+                                <span itemprop="name" t-field="product.brand_id.sudo().name" class="badge badge-primary" />
+                            </t>
+                        </t>
+                        <t t-else="">
+                            <span itemprop="name" t-field="product.brand_id.sudo().name" class="text-o-color-1" />
+                        </t>
+                    </t>
+                    <meta t-if="product.brand_id.sudo().website" itemprop="url" t-attf-content="{{product.brand_id.sudo().website}}" />
+                </h2>
+            </xpath>
+        </template>
+    </data>
+</odoo>

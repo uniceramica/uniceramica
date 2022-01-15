@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <data>
+        <template id="portal_assets_frontend_uniceramica" inherit_id="portal.assets_frontend">
+            <xpath expr="//link[@href='/portal/static/src/scss/portal.scss']" position="attributes">
+                <attribute name="href">/uniceramica/static/src/scss/portal.scss</attribute>
+            </xpath>
+        </template>
         <template id="report_assets_common_uniceramica" inherit_id="web.report_assets_common">
             <xpath expr="/t/link[@href='/web/static/src/scss/report.scss']" position="attributes">
                 <attribute name="href">/uniceramica/static/src/scss/report.scss</attribute>
@@ -9,13 +14,18 @@
                 <attribute name="href">/uniceramica/static/src/scss/layout_boxed.scss</attribute>
             </xpath>
         </template>
+        <template id="website_sale_assets_frontend_uniceramica" inherit_id="website_sale.assets_frontend">
+            <xpath expr="/t/link[@href='/website_sale/static/src/scss/website_sale.scss']" position="attributes">
+                <attribute name="href">/uniceramica/static/src/scss/website_sale.scss</attribute>
+            </xpath>
+        </template>
         <template id="address_layout_uniceramica" inherit_id="web.address_layout">
             <xpath expr="/t/t[2]/div[1]/t[1]/div[1]" position="attributes">
                 <attribute name="class">col-6 mb-4</attribute>
             </xpath>
         </template>
         <template id="external_layout_boxed_uniceramica" inherit_id="web.external_layout_boxed">
-            <xpath expr="//div[@class='o_boxed_header']" position="replace">
+            <xpath expr="//div[hasclass('o_boxed_header')]" position="replace">
                 <div class="o_boxed_header">
                     <div class="row mb8">
                         <div class="col-3">
@@ -26,7 +36,7 @@
                                 <h5 class="mt0" t-field="company.report_header"/>
                             </div>
                             <div name="company_address" class="mb4">
-                                <b style="font-size: 22px; line-height: 30px;">Uniceramica S.r.l.</b>
+                                <b style="font-size: 28px; line-height: 30px;">UNICERAMICA S.r.l.</b>
                                 <div>Via Cavallera, 17 - Andalo Valtellino (SO)</div>
                                 <div>Via G. di Vittorio, 14 - Bovisio Masciago (MB)</div>
                                 <div>info@uniceramica.it</div>

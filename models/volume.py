@@ -20,8 +20,6 @@ class ProductDimensionsVolume(models.Model):
     package_height = fields.Float(string="Package Height", digits=(3, 7))
     package_volume = fields.Float(string="Package Volume", digits=(3, 7))
 
-    brand_id = fields.Many2one('res.company')
-
     @api.onchange('length', 'breadth', 'height')
     def onchange_l_b_h(self):
         self.volume = float(self.length if self.length else 0) * float(self.breadth if self.breadth else 0) * float(
