@@ -1,0 +1,411 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* uniceramica
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-22 10:11+0000\n"
+"PO-Revision-Date: 2022-05-31 11:05+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.external_layout_boxed_uniceramica
+msgid "<b style=\"font-size: 28px; line-height: 30px;\">UNICERAMICA S.r.l.</b>"
+msgstr ""
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.website_sale_product_uniceramica
+msgid "<i class=\"fa fa-shopping-cart\"/> Add to Cart"
+msgstr "<i class=\"fa fa-shopping-cart\"/> Aggiungi al Carrello"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.report_saleorder_document_uniceramica
+msgid "<span class=\"is_on_offer float-right\">OFFER</span>"
+msgstr "<span class=\"is_on_offer float-right\">OFFERTA</span>"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.view_product_template_uniceramica_volume
+msgid "<span>kg</span>"
+msgstr ""
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.view_product_template_uniceramica_volume
+msgid "<span>m³</span>"
+msgstr ""
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.website_sale_product_uniceramica
+msgid "A short description that will also appear on documents."
+msgstr "Una breve descrizione che appare anche sui documenti."
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_pricelist_item__applied_on
+msgid "Apply On"
+msgstr "Applica a"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.product_brand_view
+#: model_terms:ir.ui.view,arch_db:uniceramica.product_series_view
+msgid "Avatar"
+msgstr ""
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_pricelist_item__brand_id
+#: model:ir.model.fields,field_description:uniceramica.field_product_product__brand_id
+#: model:ir.model.fields,field_description:uniceramica.field_product_template__brand_id
+#: model:ir.model.fields,field_description:uniceramica.field_res_partner__brand_ids
+#: model:ir.model.fields,field_description:uniceramica.field_res_users__brand_ids
+#: model:ir.model.fields,field_description:uniceramica.field_sale_report__brand_id
+#: model:ir.model.fields.selection,name:uniceramica.selection__product_pricelist_item__applied_on__5_brand
+#: model_terms:ir.ui.view,arch_db:uniceramica.product_brand_id
+msgid "Brand"
+msgstr "Marca"
+
+#. module: uniceramica
+#: code:addons/uniceramica/models/product_pricelist_item.py:0
+#, python-format
+msgid "Brand: %s"
+msgstr "Marca: %s"
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_product__breadth
+#: model:ir.model.fields,field_description:uniceramica.field_product_template__breadth
+msgid "Breadth"
+msgstr "Ampiezza"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.uniceramica_ddt
+msgid "Carrier's Signature"
+msgstr "Firma Vettore"
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_category__sequence
+msgid "Category Sequence"
+msgstr "Sequenza Categoria"
+
+#. module: uniceramica
+#: model:ir.model,name:uniceramica.model_res_partner
+msgid "Contact"
+msgstr "Contatto"
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_series__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_series__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.uniceramica_ddt
+msgid "DN date"
+msgstr "Data DDT"
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_category__display_name
+#: model:ir.model.fields,field_description:uniceramica.field_product_pricelist__display_name
+#: model:ir.model.fields,field_description:uniceramica.field_product_pricelist_item__display_name
+#: model:ir.model.fields,field_description:uniceramica.field_product_series__display_name
+#: model:ir.model.fields,field_description:uniceramica.field_product_template__display_name
+#: model:ir.model.fields,field_description:uniceramica.field_res_partner__display_name
+#: model:ir.model.fields,field_description:uniceramica.field_sale_order_line__display_name
+#: model:ir.model.fields,field_description:uniceramica.field_sale_report__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.uniceramica_ddt
+msgid "Driver's Signature"
+msgstr "Firma Autista"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.uniceramica_ddt
+msgid "Goods Description"
+msgstr "Descrizione Beni"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.uniceramica_ddt
+msgid "Gross Weight"
+msgstr "Peso Lordo"
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_product__height
+#: model:ir.model.fields,field_description:uniceramica.field_product_template__height
+msgid "Height"
+msgstr "Altezza"
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_category__id
+#: model:ir.model.fields,field_description:uniceramica.field_product_pricelist__id
+#: model:ir.model.fields,field_description:uniceramica.field_product_pricelist_item__id
+#: model:ir.model.fields,field_description:uniceramica.field_product_series__id
+#: model:ir.model.fields,field_description:uniceramica.field_product_template__id
+#: model:ir.model.fields,field_description:uniceramica.field_res_partner__id
+#: model:ir.model.fields,field_description:uniceramica.field_sale_order_line__id
+#: model:ir.model.fields,field_description:uniceramica.field_sale_report__id
+msgid "ID"
+msgstr ""
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_sale_order_line__is_on_offer
+#: model_terms:ir.ui.view,arch_db:uniceramica.sale_view_order_form_uniceramica
+msgid "Is On Offer"
+msgstr "È in Offerta"
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_category____last_update
+#: model:ir.model.fields,field_description:uniceramica.field_product_pricelist____last_update
+#: model:ir.model.fields,field_description:uniceramica.field_product_pricelist_item____last_update
+#: model:ir.model.fields,field_description:uniceramica.field_product_series____last_update
+#: model:ir.model.fields,field_description:uniceramica.field_product_template____last_update
+#: model:ir.model.fields,field_description:uniceramica.field_res_partner____last_update
+#: model:ir.model.fields,field_description:uniceramica.field_sale_order_line____last_update
+#: model:ir.model.fields,field_description:uniceramica.field_sale_report____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_series__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo Aggiornamento di"
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_series__write_date
+msgid "Last Updated on"
+msgstr "Ultimo Aggiornamento il"
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_product__length
+#: model:ir.model.fields,field_description:uniceramica.field_product_template__length
+msgid "Length"
+msgstr "Lunghezza"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.view_product_template_uniceramica_volume
+msgid "Logistics"
+msgstr "Logistica"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.external_layout_boxed_uniceramica
+msgid "Logo"
+msgstr ""
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_series__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.uniceramica_ddt
+msgid "Net Weight"
+msgstr "Peso Netto"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.uniceramica_ddt
+msgid "Notes"
+msgstr "Note"
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_product__package_breadth
+#: model:ir.model.fields,field_description:uniceramica.field_product_template__package_breadth
+#: model_terms:ir.ui.view,arch_db:uniceramica.view_product_template_uniceramica_volume
+msgid "Package Breadth"
+msgstr "Ampiezza Pacco"
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_product__package_height
+#: model:ir.model.fields,field_description:uniceramica.field_product_template__package_height
+#: model_terms:ir.ui.view,arch_db:uniceramica.view_product_template_uniceramica_volume
+msgid "Package Height"
+msgstr "Altezza Pacco"
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_product__package_length
+#: model:ir.model.fields,field_description:uniceramica.field_product_template__package_length
+#: model_terms:ir.ui.view,arch_db:uniceramica.view_product_template_uniceramica_volume
+msgid "Package Length"
+msgstr "Lunghezza Pacco"
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_product__package_volume
+#: model:ir.model.fields,field_description:uniceramica.field_product_template__package_volume
+#: model_terms:ir.ui.view,arch_db:uniceramica.view_product_template_uniceramica_volume
+msgid "Package Volume"
+msgstr "Volume Pacco"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.uniceramica_ddt
+msgid "Packages"
+msgstr "Pacchi"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.external_layout_boxed_uniceramica
+msgid "Page: <span class=\"page\"/> / <span class=\"topage\"/>"
+msgstr "Pagina: <span class=\"page\"/> / <span class=\"topage\"/>"
+
+#. module: uniceramica
+#: model:ir.model,name:uniceramica.model_product_pricelist
+msgid "Pricelist"
+msgstr "Listino prezzi"
+
+#. module: uniceramica
+#: model:ir.model.fields,help:uniceramica.field_product_pricelist_item__applied_on
+msgid "Pricelist Item applicable on selected option"
+msgstr "Articolo del listino prezzi valido per l'opzione selezionata"
+
+#. module: uniceramica
+#: model:ir.model,name:uniceramica.model_product_pricelist_item
+msgid "Pricelist Rule"
+msgstr "Regola listino prezzi"
+
+#. module: uniceramica
+#: model:ir.model,name:uniceramica.model_product_category
+msgid "Product Category"
+msgstr "Categoria prodotto"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.website_sale_product_uniceramica
+msgid "Product Name"
+msgstr "Nome Prodotto"
+
+#. module: uniceramica
+#: model:ir.actions.act_window,name:uniceramica.product_series_action
+#: model:ir.ui.menu,name:uniceramica.series_product_sale
+msgid "Product Series"
+msgstr "Serie Prodotti"
+
+#. module: uniceramica
+#: model:ir.model,name:uniceramica.model_product_template
+msgid "Product Template"
+msgstr "Modello Prodotto"
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_series__product_ids
+#: model_terms:ir.ui.view,arch_db:uniceramica.product_brand_view
+#: model_terms:ir.ui.view,arch_db:uniceramica.product_series_view
+#: model_terms:ir.ui.view,arch_db:uniceramica.website_sale_product_uniceramica
+msgid "Products"
+msgstr "Prodotti"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.uniceramica_ddt
+msgid "Recipient's Signature"
+msgstr "Firma Destinatario"
+
+#. module: uniceramica
+#: model:ir.model,name:uniceramica.model_sale_report
+msgid "Sales Analysis Report"
+msgstr "Resoconto di analisi vendite"
+
+#. module: uniceramica
+#: model:ir.model,name:uniceramica.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Riga ordine di vendita"
+
+#. module: uniceramica
+#: model:ir.model,name:uniceramica.model_product_series
+#: model:ir.model.fields,field_description:uniceramica.field_product_product__series_ids
+#: model:ir.model.fields,field_description:uniceramica.field_product_template__series_ids
+#: model_terms:ir.ui.view,arch_db:uniceramica.series_group_by
+msgid "Series"
+msgstr "Serie"
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_product_product__series_count
+#: model:ir.model.fields,field_description:uniceramica.field_product_template__series_count
+msgid "Series Count"
+msgstr "Conteggio Serie"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.product_series_view
+msgid "Series Name"
+msgstr "Nome Serie"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.website_partner_partner_detail_uniceramica
+msgid "Short Description for List View"
+msgstr "Descrizione Breve per Elenco Vista"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.report_saleorder_document_uniceramica
+msgid "Signature for Acknowledgment and Acceptance"
+msgstr "Firma per Conoscenza e Accettazione"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.report_saleorder_document_uniceramica
+msgid "Stamp and Signature for Acknowledgment and Acceptance"
+msgstr "Timbro e Firma per Conoscenza e Accettazione"
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_sale_order_line__price_subtotal_untaxed
+#: model_terms:ir.ui.view,arch_db:uniceramica.sale_view_order_form_uniceramica
+msgid "Sub Total Untaxed"
+msgstr "Totale Senza IVA"
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_sale_order_line__price_subtotal_untaxed
+msgid "Total Price Untaxed"
+msgstr "Totale Senza IVA"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.report_saleorder_document_uniceramica
+msgid "Tax ID"
+msgstr "IVA"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.website_sale_product_uniceramica
+msgid "This combination does not exist."
+msgstr "Questa combinazione non esiste."
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.website_sale_product_uniceramica
+msgid "This product has no valid combination."
+msgstr "Questo prodotto non ha combinazioni valide."
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.website_sale_product_uniceramica
+msgid "This product is no longer available."
+msgstr "Prodotto non più disponibile."
+
+#. module: uniceramica
+#: model:ir.model.fields,field_description:uniceramica.field_sale_order_line__disc_price
+#: model_terms:ir.ui.view,arch_db:uniceramica.report_saleorder_document_uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.sale_view_order_form_uniceramica
+msgid "Unit Price After Discount"
+msgstr "Prezzo Scontato"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.external_layout_boxed_uniceramica
+msgid "VAT: IT00974680142"
+msgstr "P. IVA: IT00974680142"
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.external_layout_boxed_uniceramica
+msgid "Via Cavallera, 17 - Andalo Valtellino (SO)"
+msgstr ""
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.external_layout_boxed_uniceramica
+msgid "Via G. di Vittorio, 14 - Bovisio Masciago (MB)"
+msgstr ""
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.external_layout_boxed_uniceramica
+msgid "info@uniceramica.it"
+msgstr ""
+
+#. module: uniceramica
+#: model_terms:ir.ui.view,arch_db:uniceramica.website_sale_product_uniceramica
+msgid "{{product.brand_id.sudo().name}}"
+msgstr "{{product.brand_id.sudo().name}}"

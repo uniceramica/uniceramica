@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record model="ir.ui.view" id="sale_order_view_inherit">
-            <field name="name">sale.order.view.uniceramica</field>
-            <field name="model">sale.order</field>
+        <record id="sale_view_order_form_uniceramica" model="ir.ui.view">
+            <field name="name">sale.view_order_form_uniceramica</field>
             <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="model">sale.order</field>
             <field name="arch" type="xml">
                 <xpath expr="/form/sheet/notebook/page/field[@name='order_line']/tree/field[@name='name']" position="after">
-                    <field name="is_on_offer" string="Is On Offer" />
+                    <field name="is_on_offer" string="Is On Offer" optional="show" />
+                </xpath>
+                <xpath expr="/form/sheet/notebook/page/field[@name='order_line']/tree/field[@name='price_unit']" position="attributes">
+                    <attribute name="optional">show</attribute>
+                </xpath>
+                <xpath expr="/form/sheet/notebook/page/field[@name='order_line']/tree/field[@name='price_total']" position="attributes">
+                    <attribute name="optional">show</attribute>
+                </xpath>
+                <xpath expr="/form/sheet/notebook/page/field[@name='order_line']/tree/field[@name='price_subtotal']" position="after">
+                    <field name="price_subtotal_untaxed" string="Sub Total Untaxed" optional="show" />
+                </xpath>
+                <xpath expr="/form/sheet/notebook/page/field[@name='order_line']/tree/field[@name='price_subtotal']" position="after">
+                    <field name="disc_price" string="Unit Price After Discount" optional="show" />
                 </xpath>
             </field>
         </record>

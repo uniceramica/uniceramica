@@ -8,13 +8,15 @@ class ProductBrand(models.Model):
 class BrandProduct(models.Model):
     _inherit = 'res.partner'
 
-    member_ids = fields.One2many('product.template','brand_id')
+    brand_ids = fields.One2many('product.template','brand_id')
 
+'''
     product_count = fields.Char(string='Product Count',compute='get_count_products',store=True)
 
     @api.depends('member_ids')
     def get_count_products(self):
         self.product_count = len(self.member_ids)
+'''
 
 class BrandPivot(models.Model):
     _inherit = 'sale.report'

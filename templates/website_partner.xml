@@ -4,7 +4,7 @@
         <template id="website_partner_partner_detail_uniceramica" inherit_id="website_partner.partner_detail" name="Partner Details Uniceramica">
             <xpath expr="/t" position="replace">
                 <t>
-                    <div class="col-lg-4 mt32">
+                    <div class="col-lg-3 mt32">
                         <t t-if="partner.image_1920">
                             <h1 id="partner_name" t-field="partner.display_name" style="display: none;" />
                             <div t-field="partner.image_1920" t-options="{'widget': 'image', 'preview_image': 'image_512', 'class': 'd-block mb16 text-left'}"/>
@@ -17,15 +17,23 @@
                         </address>
                         <t t-raw="left_column or ''"/>
                     </div>
-                    <div class="col-lg-8 mt32">
-                        <t t-if="partner">
-                            <div t-field="partner.website_description"/>
-                            <t groups="website.group_website_publisher">
-                                <h2 class="css_non_editable_mode_hidden o_not_editable">Short Description for List View</h2>
-                                <div class="css_non_editable_mode_hidden" t-field="partner.website_short_description"/>
-                            </t>
+                    <div class="col-lg-9 mt32">
+                        <div t-field="partner.website_description"/>
+                        <t groups="website.group_website_publisher">
+                            <h2 class="css_non_editable_mode_hidden o_not_editable">Short Description for List View</h2>
+                            <div class="css_non_editable_mode_hidden" t-field="partner.website_short_description"/>
                         </t>
                         <t t-raw="right_column or ''"/>
+                        <!--<section>
+                            <div class="container">
+                                <h2>Related Products</h2>
+                                <table class="table related_product table-striped">
+                                    <tr>
+                                        <th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </section>-->
                     </div>
                 </t>
             </xpath>

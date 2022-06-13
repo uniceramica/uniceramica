@@ -22,8 +22,12 @@
         'templates/website_product.xml',
         'templates/website_partner.xml',
         'views/brand_views.xml',
+        'views/series_views.xml',
         'views/preventivo_ordine.xml',
-        'views/volume_view.xml'
+        'views/product_category.xml',
+        'views/product_template.xml',
+        'views/volume_view.xml',
+        'security/ir.model.access.csv'
     ],
     'demo': [],
     'images': ['static/description/banner.png'],

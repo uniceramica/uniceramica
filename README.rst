@@ -5,12 +5,18 @@ Modulo per la gestione di Uniceramica.
 Features
 ========
 
-gestione del volume dell'oggetto e del volume del package
+- marcatura del prodotto "IN OFFERTA" su righe dell'ordine
+- prezzo scontato del prodotto su righe dell'ordine
+- associazione Brand a Prodotto e relative funzionalità
+- aggiunta dimensioni del package su prodotto e calcolo volume
+- sistemazione grafica DDT, preventivo, altre parti
+
 
 Linguaggi
 ====
 * [Python] - Models
 * [XML] - Odoo views
+* [SCSS] - scss files
 
 Installazione
 ============
